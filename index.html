@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type speed Game</title>
+        <link rel="stylesheet" href="Type-speed.css">
+        <!-- <link rel="stylesheet" href="../normalize.css"> -->
+        <!-- <link rel="stylesheet" href="../Fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf">
+        <link rel="stylesheet" href="../Fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf"> -->
+        
+    </head>
+    <body>
+        <div class="game">
+            <div class="name">Type Speed Test Game</div>
+            <div class="container">
+                <div class="message">
+                    You are playing on
+                    <span class="lvl"></span> Level & You Have <span class="seconds"></span>Seconds to Type The word
+                </div>
+                <div class="start">Start Playing</div>
+                <div class="the-word">Hello</div>
+                <input type="text" class="input"/>
+                <div class="upcoming-words">
+                  
+                </div>
+                <div class="control">
+                    <div class="time">Time Left : <span></span> Seconds</div>
+                    <div class="score"> Score : <span class="got">0</span> From <span class="total"></span></div>
+                </div>
+                <div class="finish">
+                    <audio src="sounds effects/correct-count.mp3"  controls class="correct">
+                        <audio src="sounds effects/correct-final.mp3"  controls class="correct-final"></audio>
+                    <audio src="sounds effects/error-count.mp3"  controls class="error">
+                </div>
+            </div>
+            
+
+            <div class="container-index">
+                <div class="message">
+                    Select your Level :
+
+                </div>
+                <select name="level-name" class="select-level">
+                    <option disabled selected value value="null">Select your level</option>
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button class="start ok">OK</button>
+                
+                </div>
+            </div>
+
+
+
+        </div>
+        <script src="Type-speed.js"></script>
+
+
+    </body>
+</html>
